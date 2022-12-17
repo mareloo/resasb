@@ -42,7 +42,7 @@ class AuthController extends Controller
 
         $user = User::where('email', $request->email)->first();
 
-        if(!$user || ($request->password != $user->password)) {
+        if(!$user || !($request->password != $user->password)) {
             return response([
                 'message' => 'Credenciais Invalidas'
             ], 401);
