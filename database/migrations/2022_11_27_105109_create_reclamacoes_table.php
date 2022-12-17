@@ -17,7 +17,7 @@ return new class extends Migration
             $table->id();
             $table->string('nome_reclamacao');
             $table->string('descricao');
-            $table->string('referencia', 5)-> unique();
+            $table->string('referencia', 5);
             $table->string('tipo_reclamacao');
             $table->timestamps();
         });
