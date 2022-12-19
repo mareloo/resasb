@@ -22,10 +22,10 @@ use Illuminate\Support\Facades\Route;
 // });
 Route::post('/register', [AuthController::class, 'register']);
 Route::post('/login', [AuthController::class, 'login']);
+Route::get('reclamacoes', [ReclamacaoController::class,'index']);
+Route::get('reclamacoes/{reclamacao}', [ReclamacaoController::class,'show']);
 
 Route::group(['middleware'=>['auth:sanctum']], function() {
-    Route::get('reclamacoes', [ReclamacaoController::class,'index']);
-    Route::get('reclamacoes/{reclamacao}', [ReclamacaoController::class,'show']);
     Route::post('reclamacoes', [ReclamacaoController::class,'store']);
     Route::put('reclamacoes/{reclamacao}', [ReclamacaoController::class,'update']);
     Route::delete('reclamacoes/{reclamacao}', [ReclamacaoController::class,'destroy']);

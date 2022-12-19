@@ -17,7 +17,7 @@ return new class extends Migration
             $table->id();
             $table->string('nome_reclamacao');
             $table->string('descricao');
-            $table->string('referencia', 5);
+            $table->string('referencia', 255);
             $table->string('tipo_reclamacao');
             $table->timestamps();
         });

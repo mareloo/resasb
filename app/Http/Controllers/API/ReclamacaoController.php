@@ -61,7 +61,7 @@ class ReclamacaoController extends Controller
      */
     public function update(ActualizarReclamacaoRequest $request,Reclamacao $reclamacao)
     {
-        $reclamacao->update($request->all());
+        $reclamacao->update($reque+st->all());
         return response()->json([
             'res' => true,
             'msg' => 'dados da reclamacao atualizado com sucesso'
