@@ -24,17 +24,18 @@ Route::post('/register', [AuthController::class, 'register']);
 Route::post('/login', [AuthController::class, 'login']);
 Route::get('reclamacoes', [ReclamacaoController::class,'index']);
 Route::get('reclamacoes/{reclamacao}', [ReclamacaoController::class,'show']);
+Route::post('reclamacoes', [ReclamacaoController::class,'store']);
+Route::put('reclamacoes/{reclamacao}', [ReclamacaoController::class,'update']);
+Route::delete('reclamacoes/{reclamacao}', [ReclamacaoController::class,'destroy']);
 
-Route::group(['middleware'=>['auth:sanctum']], function() {
-    Route::post('reclamacoes', [ReclamacaoController::class,'store']);
-    Route::put('reclamacoes/{reclamacao}', [ReclamacaoController::class,'update']);
-    Route::delete('reclamacoes/{reclamacao}', [ReclamacaoController::class,'destroy']);
+Route::get('elogios', [ElogioController::class,'index']);
+Route::get('elogios/{elogio}', [ElogioController::class,'show']);
+Route::post('elogios', [ElogioController::class,'store']);
+Route::put('elogios/{elogio}', [ElogioController::class,'update']);
+Route::delete('elogios/{elogio}', [ElogioController::class,'destroy']);
 
-    Route::get('elogios', [ElogioController::class,'index']);
-    Route::get('elogios/{elogio}', [ElogioController::class,'show']);
-    Route::post('elogios', [ElogioController::class,'store']);
-    Route::put('elogios/{elogio}', [ElogioController::class,'update']);
-    Route::delete('elogios/{elogio}', [ElogioController::class,'destroy']);
+Route::post('/logout', [AuthController::class, 'logout']);
 
-    Route::post('/logout', [AuthController::class, 'logout']);
-});
+// Route::group(['middleware'=>['auth:sanctum']], function() {
+   
+// });
