@@ -27,7 +27,7 @@ class GuardarReclamacoesRequest extends FormRequest
             "nome_reclamacao" => "required",
             "descricao" => "required",
             "referencia" => "required|unique:reclamacoes,referencia",
-            "tipo_reclamacao" => "required"
+            "numero_de_cell" => "required"
             //
         ];
     }

@@ -27,7 +27,7 @@ class ActualizarReclamacaoRequest extends FormRequest
             "nome_reclamacao" => "required",
             "descricao" => "required",
             "referencia" => "required|unique:reclamacoes,referencia,".$this->route('reclamacao')->id,
-            "tipo_reclamacao" => "required"
+            "numero_de_cell" => "required"
             //
         ];
     }
