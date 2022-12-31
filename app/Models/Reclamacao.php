@@ -14,7 +14,7 @@ class Reclamacao extends Model
         'nome_reclamacao',
 	    'descricao',
 	    'referencia',
-	    'tipo_reclamacao'
+	    'numero_de_cell'
     ];
 
 }

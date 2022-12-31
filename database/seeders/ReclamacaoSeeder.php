@@ -21,7 +21,7 @@ class ReclamacaoSeeder extends Seeder
 	        	'nome_reclamacao' => 'Reclamacao 1',
 	        	'descricao' => 'Descrição da reclamação ',
 	        	'referencia' => 70218,
-	        	'tipo_reclamacao' => 'Reclamacao unica',
+	        	'numero_de_cell' => 'Reclamacao unica',
 				'created_at' => date('Y-m-d H:i:s'),
 				'updated_at' => date('Y-m-d H:i:s')
         	],
@@ -29,7 +29,7 @@ class ReclamacaoSeeder extends Seeder
 	        	'nome_reclamacao' => 'Reclamacao 2',
 	        	'descricao' => 'Descrição da reclamação ',
 	        	'referencia' => 70213,
-	        	'tipo_reclamacao' => 'Reclamacao unica',
+	        	'numero_de_cell' => 'Reclamacao unica',
 				'created_at' => date('Y-m-d H:i:s'),
 				'updated_at' => date('Y-m-d H:i:s')
         	]
