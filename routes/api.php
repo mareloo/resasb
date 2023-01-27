@@ -22,6 +22,12 @@ use Illuminate\Support\Facades\Route;
 // });
 Route::post('/register', [AuthController::class, 'register']);
 Route::post('/login', [AuthController::class, 'login']);
+
+// user
+
+Route::get('user', [AuthController::class, 'index']);
+
+
 Route::get('reclamacoes', [ReclamacaoController::class,'index']);
 Route::get('reclamacoes/{reclamacao}', [ReclamacaoController::class,'show']);
 Route::post('reclamacoes', [ReclamacaoController::class,'store']);
@@ -37,5 +43,5 @@ Route::delete('elogios/{elogio}', [ElogioController::class,'destroy']);
 Route::post('/logout', [AuthController::class, 'logout']);
 
 // Route::group(['middleware'=>['auth:sanctum']], function() {
-   
+
 // });

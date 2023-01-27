@@ -24,10 +24,15 @@ class ActualizarReclamacaoRequest extends FormRequest
     public function rules()
     {
         return [
-            "nome_reclamacao" => "required",
-            "descricao" => "required",
-            "referencia" => "required|unique:reclamacoes,referencia,".$this->route('reclamacao')->id,
-            "numero_de_cell" => "required"
+            "caso" => "required",
+            "mensagem" => "required",
+            "referencia" => "required|unique:reclamacoes,referencia".$this->route('reclamacao')->id,
+            "contacto" => "required",
+            "bairro" => "required",
+            "file" => "null",
+            "senha" => "required",
+            "rua" => "required",
+            "posto" => "null"
             //
         ];
     }

@@ -8,6 +8,11 @@ use Illuminate\Support\Facades\Hash;
 
 class AuthController extends Controller
 {
+    public function index()
+    {
+        //
+        return User::all();
+    }
     public function register(Request  $request) {
         $request->validate([
             'name'=> 'required|string',
@@ -65,7 +70,7 @@ class AuthController extends Controller
         auth()->user()->tokens()->delete();
 
         return [
-            'message' => 'Logout efetuado com sucesso e exclusao dos tokens.'
+            'message' => 'Logout efetuado com sucesso .'
         ];
     }
 }

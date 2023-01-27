@@ -19,6 +19,8 @@ return new class extends Migration
             $table->string('descricao');
             $table->string('referencia', 255);
             $table->string('sector');
+            $table->unsignedBigInteger('id_user');
+            $table->foreign('id_user')->references('id')->on('users')->onDelete('cascade')->onUpdate('cascade');
             $table->timestamps();
         });
     }

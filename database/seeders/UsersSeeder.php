@@ -20,30 +20,30 @@ class UsersSeeder extends Seeder
         	[
                 'name' => 'Marelo Afonso',
                 'email' => 'marelo@gmail.com',
-                'numero' => '78747894',
+                'numero' => '7877894',
                 'nivelacesso' => 'utente',
-                'password' => '1234567890',
+                'password' => bcrypt('1234567890'),
         	],
         	[
-	        	'name' => 'Marelo ',
+	        'name' => 'Marelo ',
                 'email' => 'mareloa@gmail.com',
-                'numero' => '78747894',
+                'numero' => '787474',
                 'nivelacesso' => 'admin',
-                'password' => '1234567890',
+                'password' => bcrypt('1234567890'),
         	],
         	[
-	        	'name' => 'Afonso',
+	        'name' => 'Afonso',
                 'email' => 'afonso@gmail.com',
                 'numero' => '78747894',
                 'nivelacesso' => 'utente',
-                'password' => '1234567890',
+                'password' => bcrypt('1234567890'),
         	],
         	[
 	        	'name' => 'Manuela de Marelo',
                 'email' => 'ma@gmail.com',
-                'numero' => '78747894',
+                'numero' => '7874894',
                 'nivelacesso' => 'utente',
-                'password' => '1234567890',
+                'password' => bcrypt('1234567890'),
         	]
         ]);
     }

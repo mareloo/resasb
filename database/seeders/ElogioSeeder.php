@@ -22,6 +22,7 @@ class ElogioSeeder extends Seeder
 	        	'descricao' => 'Descrição do elogio ',
 	        	'referencia' => 70218,
 	        	'sector' => 'elogio unica',
+				'id_user'=> 1,
 				'created_at' => date('Y-m-d H:i:s'),
 				'updated_at' => date('Y-m-d H:i:s')
         	],
@@ -30,6 +31,7 @@ class ElogioSeeder extends Seeder
 	        	'descricao' => 'Descrição do elogio ',
 	        	'referencia' => 70213,
 	        	'sector' => 'elogio unica',
+				'id_user'=> 2,
 				'created_at' => date('Y-m-d H:i:s'),
 				'updated_at' => date('Y-m-d H:i:s')
         	]

@@ -9,12 +9,17 @@ class Reclamacao extends Model
 {
     use HasFactory;
     protected $table = 'reclamacoes';
-    
+
     protected $fillable = [
-        'nome_reclamacao',
-	    'descricao',
-	    'referencia',
-	    'numero_de_cell'
+            "caso",
+            "mensagem" ,
+            "referencia",
+            "contacto" ,
+            "bairro",
+            "file",
+            "senha",
+            "rua",
+            "posto"
     ];
 
 }

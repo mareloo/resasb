@@ -15,10 +15,17 @@ return new class extends Migration
     {
         Schema::create('reclamacoes', function (Blueprint $table) {
             $table->id();
-            $table->string('nome_reclamacao');
-            $table->string('descricao');
-            $table->string('referencia', 255);
-            $table->string('numero_de_cell',255);
+            $table->string('caso',255);
+            $table->text('mensagem');
+            $table->string('referencia')->uniqid();
+            $table->string('contacto',255);
+            $table->string('bairro');
+            $table->string('file')->nullable();
+            $table->string('senha');
+            $table->string('rua');
+            $table->string('posto', 255);
+            $table->unsignedBigInteger('id_user');
+            $table->foreign('id_user')->references('id')->on('users')->onDelete('cascade')->onUpdate('cascade');
             $table->timestamps();
         });
     }
