@@ -19,7 +19,8 @@ class Reclamacao extends Model
             "file",
             "senha",
             "rua",
-            "posto"
+            "posto",
+            "id_user"
     ];
 
 }
