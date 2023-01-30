@@ -29,11 +29,11 @@ class ActualizarReclamacaoRequest extends FormRequest
            
             "contacto" => "required",
             "bairro" => "required",
-            "file" => "null",
+           
             "senha" => "required",
             "rua" => "required",
             "posto" => "null"
-            //
+            
         ];
     }
 }
