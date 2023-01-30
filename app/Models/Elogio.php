@@ -15,7 +15,8 @@ class Elogio extends Model
 	    'sector',
         "email",
         "mensagem",
-        "contacto"
+        "contacto",
+        "id_user"
     ];
 
 }
