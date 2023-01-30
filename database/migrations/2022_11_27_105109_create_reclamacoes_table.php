@@ -17,7 +17,7 @@ return new class extends Migration
             $table->id();
             $table->string('caso',255);
             $table->text('mensagem');
-            $table->string('referencia')->uniqid();
+          
             $table->string('contacto',255);
             $table->string('bairro');
             $table->string('file')->nullable();
