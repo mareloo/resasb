@@ -23,6 +23,7 @@ return new class extends Migration
             $table->string('file')->nullable();
             $table->string('senha');
             $table->string('rua');
+            $table->string('id_user');
             $table->string('posto', 255);
             $table->unsignedBigInteger('id_user');
             $table->foreign('id_user')->references('id')->on('users')->onDelete('cascade')->onUpdate('cascade');
