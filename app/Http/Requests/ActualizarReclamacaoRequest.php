@@ -26,14 +26,14 @@ class ActualizarReclamacaoRequest extends FormRequest
         return [
             "caso" => "required",
             "mensagem" => "required",
-            "referencia" => "required|unique:reclamacoes,referencia".$this->route('reclamacao')->id,
+           
             "contacto" => "required",
             "bairro" => "required",
-            "file" => "null",
+           
             "senha" => "required",
             "rua" => "required",
             "posto" => "null"
-            //
+            
         ];
     }
 }

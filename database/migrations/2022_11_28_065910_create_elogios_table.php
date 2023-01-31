@@ -15,9 +15,9 @@ return new class extends Migration
     {
         Schema::create('elogios', function (Blueprint $table) {
             $table->id();
-            $table->string('nome_elogio');
-            $table->string('descricao');
-            $table->string('referencia', 255);
+            $table->string('email');
+            $table->string('mensagem');
+            $table->string('contacto');
             $table->string('sector');
             $table->unsignedBigInteger('id_user');
             $table->foreign('id_user')->references('id')->on('users')->onDelete('cascade')->onUpdate('cascade');

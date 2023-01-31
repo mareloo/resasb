@@ -13,13 +13,14 @@ class Reclamacao extends Model
     protected $fillable = [
             "caso",
             "mensagem" ,
-            "referencia",
+           
             "contacto" ,
             "bairro",
             "file",
             "senha",
             "rua",
-            "posto"
+            "posto",
+            "id_user"
     ];
 
 }

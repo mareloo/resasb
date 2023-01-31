@@ -11,10 +11,12 @@ class Elogio extends Model
     protected $table = 'elogios';
 
     protected $fillable = [
-        'nome_elogio',
-	    'descricao',
-	    'referencia',
+        
 	    'sector',
+        "email",
+        "mensagem",
+        "contacto",
+        "id_user"
     ];
 
 }
