@@ -24,10 +24,10 @@ class GuardarElogioRequest extends FormRequest
     public function rules()
     {
         return [
-            "nome_elogio" => "required",
-            "descricao" => "required",
-            "referencia" => "required|unique:elogios,referencia",
-            "sector" => "required"
+            "nome_elogio" => "",
+            "descricao" => "",
+            "referencia" => "",
+            "sector" => ""
             //
         ];
     }

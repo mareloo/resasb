@@ -26,7 +26,7 @@ class GuardarReclamacoesRequest extends FormRequest
         return [
             "caso" => "required",
             "mensagem" => "required",
-            "referencia" => "required|unique:reclamacoes,referencia".$this->route('reclamacao')->id,
+            "referencia" => "required|unique:reclamacoes,referencia",
             "contacto" => "required",
             "bairro" => "required",
             "file" => "null",
